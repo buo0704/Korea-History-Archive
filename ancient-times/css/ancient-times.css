@@ -9,7 +9,13 @@
     --color-text: #333333;    
 
     --spacing-md: 20px;         
-    --spacing-xs: 10px;        
+    --spacing-xs: 10px;      
+    
+    .circle-1 { background-color: #26A69A; }
+    .circle-2 { background-color: #7986CB; }
+    .circle-3 { background-color: #FFD54F; }
+    .circle-4 { background-color: #C2185B; }
+    .circle-5 { background-color: #1E88E5; }
 }
 
 * {
@@ -28,7 +34,9 @@ body {
     position: relative;
     width: 100%;
     max-width: 1920px;
-    min-height: 1908px;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
     margin: 0 auto;
     background-color: var(--color-white); 
 }
@@ -131,7 +139,7 @@ body {
 .info-box {
     width: 1088px;
     height: 222px;
-    margin: 200px auto 0;
+    margin: 100px auto 0;
 }
 
 .box-title {
@@ -155,13 +163,15 @@ body {
 }
 
 .era-list {
-    display: flex;      
+    display: flex;     
+    flex-wrap: wrap; 
     list-style: none;    
     margin-top: 30px;   
-    gap: 100px;          
+    gap: 30px 100px;          
 }
 
 .era-list li {
+    width: calc((100% - (100px * 3)) / 4);
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;    
     font-size: 25px;     
@@ -174,10 +184,72 @@ body {
 .era-list li::after {
     content: "";
     display: block;     
-    
     width: 180px;        
     height: 1px;        
     background-color: #000000; 
-    
     margin-top: 5px;    
+}
+
+.hanja {    
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    margin-left: 6px; 
+}
+
+.bottom-box {
+    width: 100vw;            
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 240px;
+    background-color: #C08A4B;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: flex;
+    gap: 30px;
+}
+
+.inner-item {
+    width: 240px;
+    height: 130px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.item-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.item-text {
+    width: 182px;            
+    height: 30px;            
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;         
+    font-size: 20px;          
+    line-height: 1.5;         
+    color: #000000;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.inner-item {
+    width: 240px;            
+    height: 130px;          
+    background-color: #FFFFFF; 
+    border-radius: 5px;      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    flex-shrink: 0;
 }
