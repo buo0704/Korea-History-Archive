@@ -30,6 +30,10 @@ body {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
+
 .layout-sheet {
     position: relative;
     width: 100%;
@@ -148,7 +152,7 @@ body {
 .box-title {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500; 
-    font-size: 40px;  
+    font-size: 30px;  
     color: #000000;
     line-height: 1.5;
     margin: 0;        
@@ -177,7 +181,7 @@ body {
     width: calc((100% - (100px * 3)) / 4);
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;    
-    font-size: 25px;     
+    font-size: 20px;     
     color: #000000;
     line-height: 1.5;
     cursor: pointer;     
@@ -237,7 +241,7 @@ body {
     height: 30px;            
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;         
-    font-size: 20px;          
+    font-size: 18px;          
     line-height: 1.5;         
     color: #000000;
     text-align: center;
